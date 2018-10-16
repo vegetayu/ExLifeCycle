@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 
-import capsule.bamboo.Logger;
-
 
 public class ActivityB extends BaseActivity {
 
