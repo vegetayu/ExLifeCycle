@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 import capsule.bamboo.Logger;
 
-public class FragmentB extends Fragment {
+public class FragmentB extends BaseFragment {
   public static FragmentB newInstance() {
     Bundle args = new Bundle();
     FragmentB fragment = new FragmentB();

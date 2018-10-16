@@ -37,15 +37,18 @@ public class FragmentA extends BaseFragment {
   }
 
   private void setOnClick(View view) {
-    view.<TextView>findViewById(R.id.tv).setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        FragmentB fragment = FragmentB.newInstance();
-        getActivity().getSupportFragmentManager().beginTransaction()
-            .replace(R.id.fragment_container, fragment, "fragmentB")
-            .addToBackStack("fragmentB").commit();
-      }
-    });
+    view.<TextView>findViewById(R.id.btnAddB)
+        .setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+            FragmentB fragment = FragmentB.newInstance();
+            getActivity().getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragment_container, fragment, "fragmentB")
+                .addToBackStack("fragmentB")
+                .commit();
+          }
+        });
   }
 
 

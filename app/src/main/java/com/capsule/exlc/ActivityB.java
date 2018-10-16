@@ -14,21 +14,19 @@ public class ActivityB extends BaseActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_second);
-
+    setContentView(R.layout.activity_b);
+    setTitle("Activity B");
     FragmentManager fm = getSupportFragmentManager();
 
     if (savedInstanceState == null) {
       fragment = FragmentA.newInstance();
       fm.beginTransaction().
           add(R.id.fragment_container, fragment, "fragmentA").
-          addToBackStack("fragmentA").
+//          addToBackStack("fragmentA").
           commit();
     } else {
-//            fragment = fm.findFragmentByTag("fragmentA");
-      if (fragment == null) {
-        Logger.e("fragment is null");
-      }
+      fragment = fm.findFragmentByTag("fragmentA");
+
     }
 
   }
