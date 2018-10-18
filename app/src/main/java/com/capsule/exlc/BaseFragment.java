@@ -82,4 +82,6 @@ public abstract class BaseFragment extends Fragment {
     Log.i("lifecycle-" + getClass().getSimpleName(), "onSaveInstanceState()");
   }
 
+
+
 }
