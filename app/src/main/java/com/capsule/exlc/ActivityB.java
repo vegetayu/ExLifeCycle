@@ -24,9 +24,11 @@ public class ActivityB extends BaseActivity {
           commit();
     } else {
       fragment = fm.findFragmentByTag("fragmentA");
-
     }
 
   }
+
+
+
 
 }

@@ -53,6 +53,12 @@ public abstract class BaseFragment extends Fragment {
   }
 
   @Override
+  public void onSaveInstanceState(Bundle outState) {
+    super.onSaveInstanceState(outState);
+    Log.i("lifecycle-" + getClass().getSimpleName(), "onSaveInstanceState()");
+  }
+
+  @Override
   public void onStop() {
     super.onStop();
     Log.i("lifecycle-" + getClass().getSimpleName(), "onStop()");
@@ -75,13 +81,5 @@ public abstract class BaseFragment extends Fragment {
     super.onDetach();
     Log.i("lifecycle-" + getClass().getSimpleName(), "onDetach()");
   }
-
-  @Override
-  public void onSaveInstanceState(Bundle outState) {
-    super.onSaveInstanceState(outState);
-    Log.i("lifecycle-" + getClass().getSimpleName(), "onSaveInstanceState()");
-  }
-
-
 
 }
