@@ -3,7 +3,7 @@ package com.capsule.exlc;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 public class DialogA extends Dialog {
   public DialogA(@NonNull Context context) {
